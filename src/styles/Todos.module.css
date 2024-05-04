@@ -1,0 +1,131 @@
+.todoscontainer {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.todosbox {
+  padding: 1rem;
+  width: 25rem;
+  max-height: 30rem;
+  overflow-y: scroll;
+  border-radius: 0.5rem;
+  border: 0.1px solid rgb(229, 226, 226);
+  box-shadow: 0px 3px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.btncontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading {
+  margin: 0;
+  color: rgb(45, 58, 63);
+}
+.todobtn {
+  position: relative;
+  color: rgb(57, 56, 56);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: rgb(210, 205, 205);
+  border: none;
+  outline: none;
+  transition-duration: 0.4s;
+}
+.todobtn:hover {
+  background-color: rgb(145, 153, 153);
+}
+.todobtn:active {
+  top: 1px;
+}
+.modal {
+  width: 20rem;
+  padding: 1rem;
+  max-height: 30rem;
+  /* overflow-y: scroll;
+  overflow-x: hidden; */
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title h5 {
+  margin: 0;
+  font-size: larger;
+  color: rgb(45, 58, 63);
+}
+.modalcontent {
+  width: 100%;
+}
+.modalcontent > textarea {
+  width: 100%;
+  resize: none;
+  outline: none;
+  margin-top: 2rem;
+  padding: 0.3rem;
+  box-sizing: border-box;
+}
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+.label {
+  font-size: 0.85rem;
+}
+.checkbox,
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.modalfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addbtn {
+  background-color: rgb(180, 183, 212);
+}
+.todoslist {
+  margin-top: 2rem;
+}
+.todo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 14px;
+  border: 0.1px solid rgb(227, 225, 225);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.todo > p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+.todoicon {
+  height: 1.1rem;
+  width: 1.1rem;
+  cursor: pointer;
+}
+.span {
+  font-size: 0.85rem;
+  margin: 0;
+  font-weight: 500;
+  color: rgb(52, 99, 142);
+  cursor: pointer;
+}
+.notask {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.todocompleted {
+  background-color: rgb(193, 193, 238);
+}
