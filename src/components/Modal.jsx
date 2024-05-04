@@ -69,7 +69,7 @@ function Modal({ open, onClose, type, edittodo }) {
               <p className={style.label}>Completed</p>
               <input
                 type="checkbox"
-                checked={edittodo && edittodo?.completed}
+                checked={todo && todo?.completed}
                 onChange={(e) =>
                   setTodo({ ...todo, completed: e.target.checked })
                 }
