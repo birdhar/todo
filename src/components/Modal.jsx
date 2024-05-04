@@ -12,7 +12,9 @@ function Modal({ open, onClose, type, edittodo }) {
   });
 
   useEffect(() => {
-    setTodo(edittodo);
+    if (edittodo) {
+      setTodo(edittodo);
+    }
   }, [edittodo]);
 
   const textarea = document.querySelector("textarea");
